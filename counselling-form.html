@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Counselling Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h2 class="logo">E-Counselling</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="colleges.html">Colleges</a>
+      <a href="index.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Student Counselling Form</h2>
+
+    <form id="counsellingForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter phone number" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Education Level</label>
+        <select id="level">
+          <option value="">Select</option>
+          <option>10th</option>
+          <option>12th</option>
+          <option>Graduate</option>
+        </select>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+  <label>Select College</label>
+  <select id="college">
+    <option value="">-- Select College --</option>
+    <option value="ABC Engineering College">ABC Engineering College</option>
+    <option value="Global Business School">Global Business School</option>
+    <option value="National Arts College">National Arts College</option>
+    <option value="Tech Valley Institute">Tech Valley Institute</option>
+  </select>
+  <small class="error"></small>
+</div>
+
+
+
+      <div class="form-group">
+        <label>Stream</label>
+        <select id="stream">
+          <option value="">Select</option>
+          <option>Science</option>
+          <option>Commerce</option>
+          <option>Arts</option>
+        </select>
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Marks (%)</label>
+        <input type="number" id="marks" placeholder="Enter marks" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Course</label>
+        <input type="text" id="course" placeholder="Eg: B.Tech, BBA" />
+        <small class="error"></small>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <script src="form.js"></script>
+</body>
+</html>
